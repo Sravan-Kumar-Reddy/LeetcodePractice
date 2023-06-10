@@ -84,14 +84,33 @@ public class DriverClass {
 //        printArray(sum.runningSum(nums3));
 //        System.out.println("");
 
-        int[][] accounts1 = new int[][]{{1, 2, 3}, {3, 2, 1}};
-        int[][] accounts2 = new int[][]{{1, 5},{7, 3},{3, 5}};
-        int[][] accounts3 = new int[][]{{2,8,7},{7,1,3},{1,9,5}};
-        RichestCustomerWealth customerWealth = new RichestCustomerWealth();
-        System.out.println(customerWealth.maximumWealth(accounts1));
-        System.out.println(customerWealth.maximumWealth(accounts2));
-        System.out.println(customerWealth.maximumWealth(accounts3));
+//        int[][] accounts1 = new int[][]{{1, 2, 3}, {3, 2, 1}};
+//        int[][] accounts2 = new int[][]{{1, 5},{7, 3},{3, 5}};
+//        int[][] accounts3 = new int[][]{{2,8,7},{7,1,3},{1,9,5}};
+//        RichestCustomerWealth customerWealth = new RichestCustomerWealth();
+//        System.out.println(customerWealth.maximumWealth(accounts1));
+//        System.out.println(customerWealth.maximumWealth(accounts2));
+//        System.out.println(customerWealth.maximumWealth(accounts3));
 
+//        ArrayShuffle arrayShuffle = new ArrayShuffle();
+//        int[] nums = new int[]{2,5,1,3,4,7};
+//        int[] nums2 = new int[]{1,2,3,4,4,3,2,1};
+//        int[] nums3 = new int[]{1,1,2,2};
+//        printArray(arrayShuffle.shuffle(nums,3));
+//        System.out.println("");
+//        printArray(arrayShuffle.shuffle(nums2,4));
+//        System.out.println("");
+//        printArray(arrayShuffle.shuffle(nums3,2));
+
+        int[] candies = new int[]{2,3,5,1,3};
+        int[] candies2 = new int[]{4,2,1,1,2};
+        int[] candies3 = new int[]{12,1,12};
+        GreatestNumberOfCandies greatestNumberOfCandies = new GreatestNumberOfCandies();
+        greatestNumberOfCandies.kidsWithCandies(candies,3).forEach(i->System.out.print(i));
+        System.out.println("");
+        greatestNumberOfCandies.kidsWithCandies(candies2,1).forEach(i->System.out.print(i));
+        System.out.println("");
+        greatestNumberOfCandies.kidsWithCandies(candies3,10).forEach(i->System.out.print(i));
 
     }
 }
