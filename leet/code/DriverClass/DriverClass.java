@@ -65,12 +65,32 @@ public class DriverClass {
         //        printArray(concatenation.getConcatenation(nums2));
 
 
-        int[] nums = new int[]{0, 2, 1, 5, 3, 4};
-        int[] nums2 = new int[]{5, 0, 1, 2, 3, 4};
-        ArrayFromPermutation permutation = new ArrayFromPermutation();
-        printArray(permutation.buildArray(nums));
-        System.out.println("");
-        printArray(permutation.buildArray(nums2));
+//        int[] nums = new int[]{0, 2, 1, 5, 3, 4};
+//        int[] nums2 = new int[]{5, 0, 1, 2, 3, 4};
+//        ArrayFromPermutation permutation = new ArrayFromPermutation();
+//        printArray(permutation.buildArray(nums));
+//        System.out.println("");
+//        printArray(permutation.buildArray(nums2));
+
+
+//        int[] nums = new int[]{1, 2, 3, 4};
+//        int[] nums2 = new int[]{1,1,1,1,1};
+//        int[] nums3 = new int[]{3,1,2,10,1};
+//        SumOf1DArray sum = new SumOf1DArray();
+//        printArray(sum.runningSum(nums));
+//        System.out.println("");
+//        printArray(sum.runningSum(nums2));
+//        System.out.println("");
+//        printArray(sum.runningSum(nums3));
+//        System.out.println("");
+
+        int[][] accounts1 = new int[][]{{1, 2, 3}, {3, 2, 1}};
+        int[][] accounts2 = new int[][]{{1, 5},{7, 3},{3, 5}};
+        int[][] accounts3 = new int[][]{{2,8,7},{7,1,3},{1,9,5}};
+        RichestCustomerWealth customerWealth = new RichestCustomerWealth();
+        System.out.println(customerWealth.maximumWealth(accounts1));
+        System.out.println(customerWealth.maximumWealth(accounts2));
+        System.out.println(customerWealth.maximumWealth(accounts3));
 
 
     }
