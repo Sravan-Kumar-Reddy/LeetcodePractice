@@ -122,16 +122,37 @@ public class DriverClass {
 //        System.out.println(goodPairs.numIdenticalPairs(nums3));
 
 
-        int[] nums = new int[]{8,1,2,2,3};
-        int[] nums2 = new int[]{6,5,4,8};
-        int[] nums3 = new int[]{7,7,7,7};
-        SmallerThanCurrentNumber smallerThanCurrentNumber = new SmallerThanCurrentNumber();
-        printArray(smallerThanCurrentNumber.smallerNumbersThanCurrent(nums));
-        System.out.println("");
-        printArray(smallerThanCurrentNumber.smallerNumbersThanCurrent(nums2));
-        System.out.println("");
-        printArray(smallerThanCurrentNumber.smallerNumbersThanCurrent(nums3));
-        System.out.println("");
+//        int[] nums = new int[]{8,1,2,2,3};
+//        int[] nums2 = new int[]{6,5,4,8};
+//        int[] nums3 = new int[]{7,7,7,7};
+//        SmallerThanCurrentNumber smallerThanCurrentNumber = new SmallerThanCurrentNumber();
+//        printArray(smallerThanCurrentNumber.smallerNumbersThanCurrent(nums));
+//        System.out.println("");
+//        printArray(smallerThanCurrentNumber.smallerNumbersThanCurrent(nums2));
+//        System.out.println("");
+//        printArray(smallerThanCurrentNumber.smallerNumbersThanCurrent(nums3));
+//        System.out.println("");
+
+//        String sentence = "thequickbrownfoxjumpsoverthelazydog";
+//        String sentence2 = "leetcode";
+//        Pangram pangram = new Pangram();
+//        System.out.println(pangram.checkIfPangram(sentence));
+//        System.out.println(pangram.checkIfPangram(sentence2));
+
+
+        int[] nums = new int []{0, 1, 2, 3, 4};
+        int[] numsIndx = new int []{0,1,2,2,1};
+        int[] nums2 = new int []{1,2,3,4,0};
+        int[] numsIndx2 = new int []{0,1,2,3,0};
+        int[] nums3 = new int []{1};
+        int[] numsIndx3 = new int []{0};
+        CreateTargetArray createTargetArray = new CreateTargetArray();
+        printArray(createTargetArray.createTargetArray(nums,numsIndx));
+        System.out.println();
+        printArray(createTargetArray.createTargetArray(nums2,numsIndx2));
+        System.out.println();
+        printArray(createTargetArray.createTargetArray(nums3,numsIndx3));
+
 
     }
 }
