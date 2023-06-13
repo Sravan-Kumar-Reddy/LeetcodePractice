@@ -2,6 +2,7 @@ package leet.code.DriverClass;
 
 import leet.code.Problems.Arrays.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -140,19 +141,32 @@ public class DriverClass {
 //        System.out.println(pangram.checkIfPangram(sentence2));
 
 
-        int[] nums = new int []{0, 1, 2, 3, 4};
-        int[] numsIndx = new int []{0,1,2,2,1};
-        int[] nums2 = new int []{1,2,3,4,0};
-        int[] numsIndx2 = new int []{0,1,2,3,0};
-        int[] nums3 = new int []{1};
-        int[] numsIndx3 = new int []{0};
-        CreateTargetArray createTargetArray = new CreateTargetArray();
-        printArray(createTargetArray.createTargetArray(nums,numsIndx));
-        System.out.println();
-        printArray(createTargetArray.createTargetArray(nums2,numsIndx2));
-        System.out.println();
-        printArray(createTargetArray.createTargetArray(nums3,numsIndx3));
+//        int[] nums = new int []{0, 1, 2, 3, 4};
+//        int[] numsIndx = new int []{0,1,2,2,1};
+//        int[] nums2 = new int []{1,2,3,4,0};
+//        int[] numsIndx2 = new int []{0,1,2,3,0};
+//        int[] nums3 = new int []{1};
+//        int[] numsIndx3 = new int []{0};
+//        CreateTargetArray createTargetArray = new CreateTargetArray();
+//        printArray(createTargetArray.createTargetArray(nums,numsIndx));
+//        System.out.println();
+//        printArray(createTargetArray.createTargetArray(nums2,numsIndx2));
+//        System.out.println();
+//        printArray(createTargetArray.createTargetArray(nums3,numsIndx3));
 
+//        List<List<String>> items = Arrays.asList(Arrays.asList("phone","blue","pixel"),Arrays.asList("computer","silver","lenovo"),Arrays.asList("phone","gold","iphone"));
+//        String ruleKey = "color";
+//        String ruleValue = "silver";
+//        RuleMatcher ruleMatcher = new RuleMatcher();
+//        System.out.println(ruleMatcher.countMatches(items,ruleKey,ruleValue));
+
+        int[] nums = new int[]{-5,1,5,0,-7};
+        int[] nums2 = new int[]{-4,-3,-2,-1,4,3,2};
+        int[] nums3 = new int[]{1};
+        LargestAltitude largestAltitude = new LargestAltitude();
+        System.out.println(largestAltitude.largestAltitude(nums));
+        System.out.println(largestAltitude.largestAltitude(nums2));
+        System.out.println(largestAltitude.largestAltitude(nums3));
 
     }
 }
