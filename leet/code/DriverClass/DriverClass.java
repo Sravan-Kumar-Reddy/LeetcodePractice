@@ -160,13 +160,19 @@ public class DriverClass {
 //        RuleMatcher ruleMatcher = new RuleMatcher();
 //        System.out.println(ruleMatcher.countMatches(items,ruleKey,ruleValue));
 
-        int[] nums = new int[]{-5,1,5,0,-7};
-        int[] nums2 = new int[]{-4,-3,-2,-1,4,3,2};
-        int[] nums3 = new int[]{1};
-        LargestAltitude largestAltitude = new LargestAltitude();
-        System.out.println(largestAltitude.largestAltitude(nums));
-        System.out.println(largestAltitude.largestAltitude(nums2));
-        System.out.println(largestAltitude.largestAltitude(nums3));
+//        int[] nums = new int[]{-5,1,5,0,-7};
+//        int[] nums2 = new int[]{-4,-3,-2,-1,4,3,2};
+//        int[] nums3 = new int[]{1};
+//        LargestAltitude largestAltitude = new LargestAltitude();
+//        System.out.println(largestAltitude.largestAltitude(nums));
+//        System.out.println(largestAltitude.largestAltitude(nums2));
+//        System.out.println(largestAltitude.largestAltitude(nums3));
+
+        int[][] image1 = new int[][]{{1,1,0}, {1,0,1}, {0,0,0}};
+        int[][] image2 = new int[][]{{1,1,0,0},{1,0,0,1},{0,1,1,1},{1,0,1,0}};
+        ImageFlipper imageFlipper = new ImageFlipper();
+        System.out.println(imageFlipper.flipAndInvertImage(image1));
+        System.out.println(imageFlipper.flipAndInvertImage(image2));
 
     }
 }
