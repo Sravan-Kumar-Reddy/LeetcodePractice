@@ -168,11 +168,16 @@ public class DriverClass {
 //        System.out.println(largestAltitude.largestAltitude(nums2));
 //        System.out.println(largestAltitude.largestAltitude(nums3));
 
-        int[][] image1 = new int[][]{{1,1,0}, {1,0,1}, {0,0,0}};
-        int[][] image2 = new int[][]{{1,1,0,0},{1,0,0,1},{0,1,1,1},{1,0,1,0}};
-        ImageFlipper imageFlipper = new ImageFlipper();
-        System.out.println(imageFlipper.flipAndInvertImage(image1));
-        System.out.println(imageFlipper.flipAndInvertImage(image2));
+//        int[][] image1 = new int[][]{{1,1,0}, {1,0,1}, {0,0,0}};
+//        int[][] image2 = new int[][]{{1,1,0,0},{1,0,0,1},{0,1,1,1},{1,0,1,0}};
+//        ImageFlipper imageFlipper = new ImageFlipper();
+//        System.out.println(imageFlipper.flipAndInvertImage(image1));
+//        System.out.println(imageFlipper.flipAndInvertImage(image2));
+
+
+//        EvenNumberOfDigits number = new EvenNumberOfDigits();
+//        System.out.println(number.findNumbers(new int[]{12,345,2,6,7896}));
+//        System.out.println(number.findNumbers(new int[]{555,901,482,1771}));
 
     }
 }
