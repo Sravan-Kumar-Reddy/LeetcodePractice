@@ -1,4 +1,4 @@
-package leet.code.Problems.Arrays;
+package leet.code.Problems.Arrays.easy;
 
 /*
 There are n kids with candies. You are given an integer array candies, where each candies[i]

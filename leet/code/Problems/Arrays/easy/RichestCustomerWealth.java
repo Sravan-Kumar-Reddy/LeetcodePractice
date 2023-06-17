@@ -1,4 +1,4 @@
-package leet.code.Problems.Arrays;
+package leet.code.Problems.Arrays.easy;
 
 /*
 You are given an m x n integer grid accounts where accounts[i][j] is the amount of money the

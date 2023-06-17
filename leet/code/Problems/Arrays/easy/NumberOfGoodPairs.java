@@ -1,4 +1,4 @@
-package leet.code.Problems.Arrays;
+package leet.code.Problems.Arrays.easy;
 
 /*
 Given an array of integers nums, return the number of good pairs.

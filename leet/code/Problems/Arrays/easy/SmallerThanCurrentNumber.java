@@ -1,4 +1,4 @@
-package leet.code.Problems.Arrays;
+package leet.code.Problems.Arrays.easy;
 
 /*
 Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it.

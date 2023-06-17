@@ -1,4 +1,4 @@
-package leet.code.Problems.Arrays;
+package leet.code.Problems.Arrays.easy;
 
 /*
 Given a square matrix mat, return the sum of the matrix diagonals.
