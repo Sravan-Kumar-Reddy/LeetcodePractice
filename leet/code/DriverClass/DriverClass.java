@@ -179,5 +179,23 @@ public class DriverClass {
 //        System.out.println(number.findNumbers(new int[]{12,345,2,6,7896}));
 //        System.out.println(number.findNumbers(new int[]{555,901,482,1771}));
 
+//        MatrixDiagonalSum matrixDiagonalSum = new MatrixDiagonalSum();
+//        System.out.println(matrixDiagonalSum.diagonalSum(new int[][]{{1,2,3},{4,5,6},{7,8,9}}));
+//        System.out.println(matrixDiagonalSum.diagonalSum(new int[][]{{1,1,1,1},{1,1,1,1},{1,1,1,1},{1,1,1,1}}));
+
+//        ArrayFormOfInteger arrayFormOfInteger = new ArrayFormOfInteger();
+////        System.out.println(arrayFormOfInteger.addToArrayForm(new int[]{9,9,9,9,9,9,9,9,9,9},1));
+////        System.out.println(arrayFormOfInteger.addToArrayForm(new int[]{1,2,0,0},34));
+//        //[1,2,6,3,0,7,1,7,1,9,7,5,6,6,4,4,0,5,7,9]
+//        System.out.println(arrayFormOfInteger.addToArrayForm(new int[]{1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3}, 516));
+
+//        TransposeMatrix transposeMatrix = new TransposeMatrix();
+//        int[][] response = transposeMatrix.transpose(new int[][]{{1,2,3},{4,5,6}});
+////        int[][] response = transposeMatrix.transpose(new int[][]{{1,2,3},{4,5,6},{7,8,9}});
+//        for(int i=0;i<response.length;i++){
+//            for(int j=0;j<response[i].length;j++){
+//                System.out.println(response[i][j]);
+//            }
+//        }
     }
 }
