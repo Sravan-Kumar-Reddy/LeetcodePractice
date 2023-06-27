@@ -1,0 +1,149 @@
+package leet.code.Problems.Arrays.medium;
+
+/*
+Given an m x n matrix, return all elements of the matrix in spiral order.
+
+
+Example 1:
+Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [1,2,3,6,9,8,7,4,5]
+
+Example 2:
+Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+*/
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SpiralMatrixOrder {
+
+    List<Integer> traverseMatrix(int[][] matrix, int row, int col, String direction, List<Integer> response) {
+
+        switch (direction) {
+            case "right":
+                while (col < matrix[0].length) {
+                    response.add(matrix[row][col]);
+                    col++;
+                }
+                break;
+            case "down":
+                while (row < matrix.length) {
+                    response.add(matrix[row][col]);
+                    row++;
+                }
+                break;
+            case "left":
+                while (col > 0) {
+                    response.add(matrix[row][col]);
+                    col--;
+                }
+                break;
+            case "up":
+                while (row > matrix[0].length) {
+                    response.add(matrix[row][col]);
+                    row--;
+                }
+                break;
+        }
+
+        return response;
+    }
+
+    public List<Integer> spiralOrder(int[][] matrix) {
+            List<Integer> result = new ArrayList<>();
+            if (matrix == null || matrix.length == 0) {
+                return result;
+            }
+
+            int rows = matrix.length;
+            int cols = matrix[0].length;
+            int top = 0;
+            int bottom = rows - 1;
+            int left = 0;
+            int right = cols - 1;
+
+            while (top <= bottom && left <= right) {
+                // Traverse top row
+                for (int i = left; i <= right; i++) {
+                    result.add(matrix[top][i]);
+                }
+                top++;
+
+                // Traverse right column
+                for (int i = top; i <= bottom; i++) {
+                    result.add(matrix[i][right]);
+                }
+                right--;
+
+                // Check if there are more rows and columns remaining
+                if (top <= bottom) {
+                    // Traverse bottom row
+                    for (int i = right; i >= left; i--) {
+                        result.add(matrix[bottom][i]);
+                    }
+                    bottom--;
+                }
+
+                if (left <= right) {
+                    // Traverse left column
+                    for (int i = bottom; i >= top; i--) {
+                        result.add(matrix[i][left]);
+                    }
+                    left++;
+                }
+            }
+
+            return result;
+        }
+}
+
+
+class Solution {
+    public List<Integer> spiralOrder(int[][] matrix) {
+        List<Integer> result = new ArrayList<>();
+        if (matrix == null || matrix.length == 0) {
+            return result;
+        }
+
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        int top = 0;
+        int bottom = rows - 1;
+        int left = 0;
+        int right = cols - 1;
+
+        while (top <= bottom && left <= right) {
+            // Traverse top row
+            for (int i = left; i <= right; i++) {
+                result.add(matrix[top][i]);
+            }
+            top++;
+
+            // Traverse right column
+            for (int i = top; i <= bottom; i++) {
+                result.add(matrix[i][right]);
+            }
+            right--;
+
+            // Check if there are more rows and columns remaining
+            if (top <= bottom) {
+                // Traverse bottom row
+                for (int i = right; i >= left; i--) {
+                    result.add(matrix[bottom][i]);
+                }
+                bottom--;
+            }
+
+            if (left <= right) {
+                // Traverse left column
+                for (int i = bottom; i >= top; i--) {
+                    result.add(matrix[i][left]);
+                }
+                left++;
+            }
+        }
+
+        return result;
+    }
+}
