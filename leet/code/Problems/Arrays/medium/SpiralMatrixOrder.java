@@ -18,38 +18,6 @@ import java.util.List;
 
 public class SpiralMatrixOrder {
 
-    List<Integer> traverseMatrix(int[][] matrix, int row, int col, String direction, List<Integer> response) {
-
-        switch (direction) {
-            case "right":
-                while (col < matrix[0].length) {
-                    response.add(matrix[row][col]);
-                    col++;
-                }
-                break;
-            case "down":
-                while (row < matrix.length) {
-                    response.add(matrix[row][col]);
-                    row++;
-                }
-                break;
-            case "left":
-                while (col > 0) {
-                    response.add(matrix[row][col]);
-                    col--;
-                }
-                break;
-            case "up":
-                while (row > matrix[0].length) {
-                    response.add(matrix[row][col]);
-                    row--;
-                }
-                break;
-        }
-
-        return response;
-    }
-
     public List<Integer> spiralOrder(int[][] matrix) {
             List<Integer> result = new ArrayList<>();
             if (matrix == null || matrix.length == 0) {
